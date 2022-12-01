@@ -1,0 +1,15 @@
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\bin\Debug\net6.0\MusicApp.exe
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\bin\Debug\net6.0\MusicApp.deps.json
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\bin\Debug\net6.0\MusicApp.runtimeconfig.json
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\bin\Debug\net6.0\MusicApp.dll
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\bin\Debug\net6.0\MusicApp.pdb
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\obj\Debug\net6.0\MusicApp.csproj.AssemblyReference.cache
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\obj\Debug\net6.0\MusicApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\obj\Debug\net6.0\MusicApp.AssemblyInfoInputs.cache
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\obj\Debug\net6.0\MusicApp.AssemblyInfo.cs
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\obj\Debug\net6.0\MusicApp.csproj.CoreCompileInputs.cache
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\obj\Debug\net6.0\MusicApp.dll
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\obj\Debug\net6.0\refint\MusicApp.dll
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\obj\Debug\net6.0\MusicApp.pdb
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\obj\Debug\net6.0\MusicApp.genruntimeconfig.cache
+C:\Users\ISREAL\source\repos\MusicApp\MusicApp\obj\Debug\net6.0\ref\MusicApp.dll
