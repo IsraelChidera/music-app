@@ -10,6 +10,7 @@ namespace MusicApp
     {
         //Fields and Properties
         private List<PlayList> _playlist { get; set; } = new List<PlayList>();
+        
 
         //methods
         private void DisplayPlayListData(PlayList playlist)
@@ -28,7 +29,8 @@ namespace MusicApp
 
         //constructor
         public void AddPlayList(PlayList playlist)
-        {
+        {            
+            //songCollection.Add(new SongCollection() { SongName = "for reals" });
             _playlist.Add(playlist);
         }
 
@@ -58,6 +60,21 @@ namespace MusicApp
             var matchingPlaylist = _playlist.Where(c => c.Name.Contains(searchPhrase)).ToList();
 
             DisplayPlayListData(matchingPlaylist);
+        }
+
+        public void RemovePlaylist()
+        {
+            DisplayAllPlaylist();
+            Console.WriteLine("\nEnter playlist name to remove");
+            string name = Console.ReadLine();
+
+            foreach(var playList in _playlist)
+            {                
+                Console.WriteLine("checkin");
+                Console.WriteLine(playList.Name);
+            }
+
+           
         }
 
     }

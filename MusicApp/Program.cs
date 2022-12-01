@@ -9,9 +9,10 @@
 
             Console.WriteLine("\nWhat do you want to do?");
             Console.WriteLine("1: Add Playlist");
-            Console.WriteLine("2: Display Playlist By Number");
+            Console.WriteLine("2: Display Playlist By Genre");
             Console.WriteLine("3: Display All Playlist");
             Console.WriteLine("4: Search for playlist");
+            Console.WriteLine("5: Remove Playlist");
             Console.WriteLine("0: To exit the application");
             string userInput = Console.ReadLine();
             PlayListOperation playlist = new PlayListOperation();
@@ -27,14 +28,17 @@
                         string? name = Console.ReadLine();
                         Console.WriteLine("Input a number for your playlist");
                         Console.Write(" ==> ");
-                        string? number = Console.ReadLine();
-
-                        var newPlaylist = new PlayList(name, number);
-                        playlist.AddPlayList(newPlaylist);
+                        string? genre = Console.ReadLine();
+                        if (!string.IsNullOrWhiteSpace(name) && !string.IsNullOrWhiteSpace(genre))
+                        {
+                            var newPlaylist = new PlayList(name, genre);
+                            playlist.AddPlayList(newPlaylist);
+                        }
+                                              
                         break;
                     case "2":
                         Console.Clear();
-                        Console.WriteLine("Input playlist number to search");
+                        Console.WriteLine("Input playlist genre to search");
                         Console.Write("==>");
                         var search = Console.ReadLine();
                         playlist.DisplayPlayList(search);
@@ -49,6 +53,10 @@
                         var searchphrase = Console.ReadLine();
                         playlist.DisplayMatchingPlaylist(searchphrase);
                         break;
+                    case "5":
+                        Console.Clear();
+                        playlist.RemovePlaylist();
+                        break;
                     case "0":
                         Console.Clear();
                         Console.WriteLine("\nOuch! We will love to see you again");
@@ -60,7 +68,7 @@
 
                 Console.WriteLine("\n\nSelect operation");
                 Console.WriteLine("\t1: Add Playlist");
-                Console.WriteLine("\t2: Display Playlist By Number");
+                Console.WriteLine("\t2: Display Playlist By Genre");
                 Console.WriteLine("\t3: Display All Playlist");
                 Console.WriteLine("\t4: Search for playlist");
                 Console.WriteLine("\t0: To exit the application");
