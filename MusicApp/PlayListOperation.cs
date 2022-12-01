@@ -14,13 +14,13 @@ namespace MusicApp
 
         //methods
         private void DisplayPlayListData(PlayList playlist)
-        {
-            Console.WriteLine("\n\tPlaylist Name -- Playlist Genre");
+        {            
             Console.WriteLine($"\n\t{playlist.Name} -- {playlist.Genre}");
         }
 
         private void DisplayPlayListData(List<PlayList> playlists)
         {
+            Console.WriteLine("\n\tPlaylist Name -- Playlist Genre");
             foreach (var playlist in playlists)
             {
                 DisplayPlayListData(playlist);
@@ -72,6 +72,11 @@ namespace MusicApp
             {                
                 Console.WriteLine("checkin");
                 Console.WriteLine(playList.Name);
+
+                /*if (playList.Name.FirstOrDefault)
+                {
+                    _playlist.Remove(playList);
+                }*/
             }
 
            

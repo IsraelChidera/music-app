@@ -71,6 +71,7 @@
                 Console.WriteLine("\t2: Display Playlist By Genre");
                 Console.WriteLine("\t3: Display All Playlist");
                 Console.WriteLine("\t4: Search for playlist");
+                Console.WriteLine("\t5: Remove Playlist");
                 Console.WriteLine("\t0: To exit the application");
                 userInput = Console.ReadLine();
 
