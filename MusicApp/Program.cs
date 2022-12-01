@@ -26,7 +26,7 @@
                         Console.WriteLine("Input a name for your playlist");
                         Console.Write(" ==> ");
                         string? name = Console.ReadLine();
-                        Console.WriteLine("Input a number for your playlist");
+                        Console.WriteLine("Input a genre for your playlist");
                         Console.Write(" ==> ");
                         string? genre = Console.ReadLine();
                         if (!string.IsNullOrWhiteSpace(name) && !string.IsNullOrWhiteSpace(genre))

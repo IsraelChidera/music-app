@@ -73,10 +73,12 @@ namespace MusicApp
                 Console.WriteLine("checkin");
                 Console.WriteLine(playList.Name);
 
-                /*if (playList.Name.FirstOrDefault)
+                if (playList.Name.Equals(name))
                 {
-                    _playlist.Remove(playList);
-                }*/
+                    Console.WriteLine("Succesful");
+                }
+
+                Console.WriteLine("Unable to delete playlist");
             }
 
            
