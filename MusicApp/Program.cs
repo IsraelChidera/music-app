@@ -13,6 +13,7 @@
             Console.WriteLine("3: Display All Playlist");
             Console.WriteLine("4: Search for playlist");
             Console.WriteLine("5: Remove Playlist");
+            Console.WriteLine("6: Open Music");
             Console.WriteLine("0: To exit the application");
             string userInput = Console.ReadLine();
             PlayListOperation playlist = new PlayListOperation();
@@ -57,6 +58,10 @@
                         Console.Clear();
                         playlist.RemovePlaylist();
                         break;
+                    case "6":
+                        Console.Clear();
+                        SongList.DisplayMusicList();
+                        break;
                     case "0":
                         Console.Clear();
                         Console.WriteLine("\nOuch! We will love to see you again");
@@ -72,6 +77,7 @@
                 Console.WriteLine("\t3: Display All Playlist");
                 Console.WriteLine("\t4: Search for playlist");
                 Console.WriteLine("\t5: Remove Playlist");
+                Console.WriteLine("\t6: Open Music");
                 Console.WriteLine("\t0: To exit the application");
                 userInput = Console.ReadLine();
 

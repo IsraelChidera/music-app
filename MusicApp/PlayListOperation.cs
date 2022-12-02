@@ -68,20 +68,9 @@ namespace MusicApp
             Console.WriteLine("\nEnter playlist name to remove");
             string name = Console.ReadLine();
 
-            foreach(var playList in _playlist)
-            {                
-                Console.WriteLine("checkin");
-                Console.WriteLine(playList.Name);
+           _playlist.RemoveAll(x => x.Equals(name));
 
-                if (playList.Name.Equals(name))
-                {
-                    Console.WriteLine("Succesful");
-                }
 
-                Console.WriteLine("Unable to delete playlist");
-            }
-
-           
         }
 
     }
